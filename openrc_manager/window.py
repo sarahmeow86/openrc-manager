@@ -40,7 +40,7 @@ class MainWindow(BaseWindow):
         self.services: list[Service] = []
         self.filtered_services: list[Service] = []
         self.selected_service: Service | None = None
-        self.auto_refresh = True
+        self.auto_refresh = False
         self.refresh_interval_ms = 5000
 
         self.set_title(f"OpenRC Service Manager - {self.distro.pretty_name}")

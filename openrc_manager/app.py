@@ -57,7 +57,7 @@ class OpenRCManagerApplication((Adw.Application if Adw else Gtk.Application)):
         auto_action = Gio.SimpleAction.new_stateful(
             "auto_refresh",
             None,
-            GLib.Variant.new_boolean(True),
+            GLib.Variant.new_boolean(False),
         )
         auto_action.connect("activate", self._toggle_auto_refresh)
         self.add_action(auto_action)
