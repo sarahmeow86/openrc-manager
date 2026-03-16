@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import gi
+from pathlib import Path
 
 gi.require_version("Gtk", "4.0")
 
@@ -47,6 +48,10 @@ class OpenRCManagerApplication((Adw.Application if Adw else Gtk.Application)):
         if self.window is None:
             self.window = MainWindow(self)
             self._install_actions()
+            # Register the bundled SVG so GTK can resolve "openrc-manager"
+            data_dir = str(Path(__file__).resolve().parent / "data")
+            icon_theme = Gtk.IconTheme.get_for_display(self.window.get_display())
+            icon_theme.add_search_path(data_dir)
         self.window.present()
 
     def _install_actions(self) -> None:

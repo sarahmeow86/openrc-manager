@@ -45,6 +45,7 @@ class MainWindow(BaseWindow):
 
         self.set_title(f"OpenRC Service Manager - {self.distro.pretty_name}")
         self.set_default_size(1024, 700)
+        self.set_icon_name("openrc-manager")
 
         self.search_entry: Gtk.SearchEntry
         self.status_filter: Gtk.DropDown
