@@ -1,6 +1,6 @@
 # Maintainer: sarahmeow86 <saretta1986@proton.me>
 pkgname=openrc-manager
-pkgver=1.0.4
+pkgver=1.0.5
 pkgrel=0
 pkgdesc="GTK4 graphical interface for managing OpenRC services"
 url="https://github.com/sarahmeow86/openrc-manager"
