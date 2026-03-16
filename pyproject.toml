@@ -4,12 +4,12 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "openrc-manager"
-version = "1.0.0"
+version = "1.0.2"
 description = "GTK4 graphical interface for managing OpenRC services"
 readme = "README.md"
 license = { text = "GPL-3.0" }
 authors = [
-  { name = "Your Name", email = "your@email.com" }
+  { name = "Sarah", email = "saretta1986@preoton.me" }
 ]
 keywords = ["openrc", "init", "service", "manager", "gtk"]
 classifiers = [
@@ -27,9 +27,9 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/youruser/openrc-manager"
-Repository = "https://github.com/youruser/openrc-manager"
-Issues = "https://github.com/youruser/openrc-manager/issues"
+Homepage = "https://github.com/sarahmeow86/openrc-manager"
+Repository = "https://github.com/sarahmeow86/openrc-manager"
+Issues = "https://github.com/sarahmeow86/openrc-manager/issues"
 
 [project.scripts]
 openrc-manager = "openrc_manager.__main__:main"

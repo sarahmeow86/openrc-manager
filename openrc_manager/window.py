@@ -61,7 +61,7 @@ class MainWindow(BaseWindow):
         self.details_button: Gtk.Button
 
         self._build_ui()
-        self.load_services()
+        GLib.idle_add(self.load_services)
         self._start_auto_refresh()
 
     def _build_ui(self) -> None:
