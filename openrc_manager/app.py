@@ -28,7 +28,7 @@ def _about_dialog(parent: Gtk.Window) -> None:
     about.set_modal(True)
     about.set_program_name("OpenRC Service Manager")
     about.set_version("1.0.0")
-    about.set_website("https://github.com/youruser/openrc-manager")
+    about.set_website("https://github.com/sarahmeow86/openrc-manager")
     about.set_license_type(Gtk.License.GPL_3_0)
     about.set_comments("Universal GTK4 GUI for OpenRC service management")
     about.present()

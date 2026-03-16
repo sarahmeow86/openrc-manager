@@ -7,8 +7,8 @@ PYTHON_COMPAT=( python3_{10..12} )
 inherit python-single-r1 desktop xdg
 
 DESCRIPTION="GTK4 graphical interface for managing OpenRC services"
-HOMEPAGE="https://github.com/youruser/openrc-manager"
-SRC_URI="https://github.com/youruser/${PN}/archive/v${PV}.tar.gz -> ${P}.tar.gz"
+HOMEPAGE="https://github.com/sarahmeow86/openrc-manager"
+SRC_URI="https://github.com/sarahmeow86/${PN}/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="GPL-3"
 SLOT="0"

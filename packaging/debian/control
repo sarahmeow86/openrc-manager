@@ -1,13 +1,13 @@
 Source: openrc-manager
 Section: admin
 Priority: optional
-Maintainer: Your Name <your@email.com>
+Maintainer: sarahmeow86 <saretta1986@proton.me>
 Build-Depends: debhelper-compat (= 13),
                dh-python,
                python3-all,
                python3-setuptools
 Standards-Version: 4.6.0
-Homepage: https://github.com/youruser/openrc-manager
+Homepage: https://github.com/sarahmeow86/openrc-manager
 Rules-Requires-Root: no
 
 Package: openrc-manager

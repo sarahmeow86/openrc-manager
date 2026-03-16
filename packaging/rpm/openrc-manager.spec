@@ -4,7 +4,7 @@ Release:        1%{?dist}
 Summary:        GTK4 graphical interface for managing OpenRC services
 
 License:        GPL-3.0
-URL:            https://github.com/youruser/openrc-manager
+URL:            https://github.com/sarahmeow86/openrc-manager
 Source0:        %{name}-%{version}.tar.gz
 
 BuildArch:      noarch
@@ -52,5 +52,5 @@ install -Dm644 openrc_manager/data/org.openrc.manager.policy \
 %{_datadir}/polkit-1/actions/org.openrc.manager.policy
 
 %changelog
-* Mon Jan 15 2024 Your Name <your@email.com> - 1.0.0-1
+* Mon Jan 15 2024 sarahmeow86 <saretta1986@proton.me> - 1.0.0-1
 - Initial release
