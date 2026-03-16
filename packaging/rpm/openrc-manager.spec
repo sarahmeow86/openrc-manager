@@ -1,5 +1,5 @@
 Name:           openrc-manager
-Version:        1.0.0
+Version:        1.0.3
 Release:        1%{?dist}
 Summary:        GTK4 graphical interface for managing OpenRC services
 
@@ -52,5 +52,5 @@ install -Dm644 openrc_manager/data/org.openrc.manager.policy \
 %{_datadir}/polkit-1/actions/org.openrc.manager.policy
 
 %changelog
-* Mon Jan 15 2024 sarahmeow86 <saretta1986@proton.me> - 1.0.0-1
+* Mon Jan 15 2024 sarahmeow86 <saretta1986@proton.me> - 1.0.3-1
 - Initial release
