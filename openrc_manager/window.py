@@ -127,6 +127,7 @@ class MainWindow(BaseWindow):
         self.list_box = Gtk.ListBox()
         self.list_box.add_css_class("boxed-list")
         self.list_box.set_selection_mode(Gtk.SelectionMode.SINGLE)
+        self.list_box.set_activate_on_single_click(False)
         self.list_box.connect("row-selected", self.on_service_selected)
         self.list_box.connect("row-activated", self.on_service_activated)
         scrolled.set_child(self.list_box)
