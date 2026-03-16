@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "openrc-manager"
-version = "1.0.2"
+version = "1.0.3"
 description = "GTK4 graphical interface for managing OpenRC services"
 readme = "README.md"
 license = { text = "GPL-3.0" }
