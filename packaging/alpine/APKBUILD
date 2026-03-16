@@ -1,0 +1,25 @@
+# Maintainer: Your Name <your@email.com>
+pkgname=openrc-manager
+pkgver=1.0.0
+pkgrel=0
+pkgdesc="GTK4 graphical interface for managing OpenRC services"
+url="https://github.com/youruser/openrc-manager"
+arch="noarch"
+license="GPL-3.0"
+depends="python3 py3-gobject3 gtk4.0 libadwaita openrc"
+makedepends="py3-setuptools"
+source="$pkgname-$pkgver.tar.gz::https://github.com/youruser/$pkgname/archive/v$pkgver.tar.gz"
+
+build() {
+    python3 setup.py build
+}
+
+package() {
+    python3 setup.py install --prefix=/usr --root="$pkgdir"
+
+    install -Dm644 openrc_manager/data/openrc-manager.desktop \
+        "$pkgdir"/usr/share/applications/openrc-manager.desktop
+
+    install -Dm644 openrc_manager/data/org.openrc.manager.policy \
+        "$pkgdir"/usr/share/polkit-1/actions/org.openrc.manager.policy
+}

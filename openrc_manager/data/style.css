@@ -1,0 +1,22 @@
+.header-row {
+  padding: 6px;
+  background: alpha(@theme_fg_color, 0.05);
+  border: 1px solid alpha(@theme_fg_color, 0.1);
+  border-radius: 10px;
+}
+
+.service-running {
+  color: @success_color;
+}
+
+.service-stopped {
+  color: @warning_color;
+}
+
+.service-crashed {
+  color: @error_color;
+}
+
+window {
+  transition: background-color 160ms ease-in-out;
+}

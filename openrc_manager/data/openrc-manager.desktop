@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=OpenRC Service Manager
+Comment=Manage OpenRC init services with a GTK4 interface
+Exec=openrc-manager
+Icon=openrc-manager
+Terminal=false
+Categories=System;Settings;
+Keywords=openrc;service;init;runlevel;
+StartupNotify=true
